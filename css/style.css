@@ -643,19 +643,24 @@ body * {
 
 .types__vector {
   background-image: url(../svg/Vector.jpg);
-  border-radius: 30px;
+  /* border-radius: 30px; */
   width: 28px;
   height: 28px;
   margin: 0 auto;
+  position: relative;
+
+
+  bottom: 0px;
 }
+
 
 .types__vector::after {
   content: "";
   width: 32px;
   height: 2px;
   position: absolute;
-  left: 57%;
-  top: 306%;
+  left: 100%;
+  top: 50%;
   transform: translate(0, -50%);
   background: #e3b873;
   border-radius: 15px / 15px;
@@ -666,7 +671,7 @@ body * {
   width: 32px;
   height: 2px;
   position: absolute;
-  top: 306%;
+  top: 55%;
   transform: translate(-100%, -50%);
   background: #e3b873;
   border-radius: 15px / 15px;
