@@ -1419,7 +1419,7 @@ body * {
 
 .form3:hover {
   background: #73e395;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .Scheme {
