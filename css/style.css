@@ -28,7 +28,19 @@ body * {
   margin: 0 auto;
 }
 
-.button {
+.batton {
+  font-size: 14px;
+  width: 200px;
+  border: none;
+}
+
+.batton:hover {
+  background: #73e395;
+  cursor: pointer;
+
+}
+
+.button1 {
   font-family: "Nunito Sans";
   background: #e3b873;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
@@ -38,7 +50,7 @@ body * {
   padding: 13px 33px;
   text-transform: uppercase;
   font-size: 11px;
-  width: 161px;
+  /* width: 161px; */
   color: white;
 }
 
@@ -86,9 +98,14 @@ body * {
   flex-direction: row;
 }
 
-.header__navigation__link a {
+.header__navigation__link {
   text-decoration: none;
   color: white;
+}
+
+
+.hov:hover {
+  color: #e3b873;
 }
 
 .phone {
@@ -140,9 +157,7 @@ body * {
   color: #ffffff;
 }
 
-.color {
-  color: #e3b873;
-}
+
 
 .hero-hero {
   position: relative;
@@ -169,13 +184,21 @@ body * {
   line-height: 15px;
   text-align: center;
   color: #ffffff;
-  background: #e3b873;
-  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  background: none;
+  /* background: #e3b873; */
+  /* box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3); */
   border-radius: 2px;
-  border: 0;
-  padding: 20px 42px;
+  border: 1px solid #ffffff;
+
+  box-sizing: border-box;
+  /* padding: 20px 42px; */
   width: 207px;
   height: 51px;
+}
+
+.calculate:hover {
+  background: #e3b873;
+  cursor: pointer;
 }
 
 .APPLICATION {
@@ -195,6 +218,11 @@ body * {
   color: #ffffff;
   background: none;
   margin-bottom: 208px;
+}
+
+.APPLICATION:hover {
+  background: #e3b873;
+  cursor: pointer;
 }
 
 /* Part 1 end */
@@ -226,17 +254,23 @@ body * {
   margin-bottom: 52px;
 }
 
-.Rostov-on-Don__Admiral {
+.hov1 {
   font-family: "yeseva-one";
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  border-bottom: 1px solid #e3b873;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 7px;
-  color: #e3b873;
+  /* color: #e3b873; */
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.Sochi__Thieves {
+.hov1:hover {
+  color: #e3b873;
+  border-bottom: 1px solid #e3b873;
+}
+
+/* .Sochi__Thieves {
   font-family: "yeseva-one";
   font-size: 14px;
   text-decoration: none;
@@ -250,7 +284,9 @@ body * {
   text-decoration: none;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.3);
-}
+} */
+
+
 
 .title__text__photo {
   background-image: url(../images/photo.png);
@@ -262,6 +298,7 @@ body * {
 
 .text__title {
   font-family: Yeseva One;
+  position: relative;
   margin-left: 91px;
   font-size: 27px;
   line-height: 37px;
@@ -277,8 +314,8 @@ body * {
   width: 92px;
   height: 2px;
   position: absolute;
-  left: 19%;
-  top: 115%;
+  left: 70%;
+  top: 90%;
   transform: translate(0, -50%);
   background: #e3b873;
   border-radius: 15px / 15px;
@@ -437,12 +474,65 @@ body * {
   height: 400px;
 }
 
-.vector {
-  background-image: url(../images/Group\ 8.4.png);
+
+
+.botton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 205px;
   height: 14px;
-  margin-top: 80px;
+  margin-top: 70px;
 }
+
+
+
+.btn1 {
+  background-image: url(../images/Group.png);
+  background-repeat: no-repeat;
+
+  height: 14px;
+  width: 42px;
+  color: #ffffff;
+}
+
+.btn2 {
+  background-image: url(../images/Rectangle2.png);
+  background-repeat: no-repeat;
+  height: 10px;
+  width: 10px;
+  color: #ffffff;
+}
+
+.btn3 {
+  background-image: url(../images/Rectangle1.png);
+  background-repeat: no-repeat;
+  height: 10px;
+  width: 10px;
+  color: #ffffff;
+}
+
+.btn4 {
+  background-image: url(../images/Rectangle3.png);
+  background-repeat: no-repeat;
+  height: 10px;
+  width: 10px;
+  color: #ffffff;
+}
+
+.btn5 {
+  background-image: url(../images/Group1.png);
+  background-repeat: no-repeat;
+  /* transform: rotate(180deg); */
+  height: 14px;
+  width: 42px;
+  color: #ffffff;
+}
+
+
+
+
+
 
 .control {
   font-family: Yeseva One;
@@ -724,16 +814,36 @@ body * {
 .repair__buttons {
   display: flex;
   justify-content: space-around;
+  align-content: center;
+
   height: 54px;
+
 }
 
 .repair__button {
+
   background: #e3b873;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
   width: 228px;
   height: 54px;
   margin-top: -28px;
   margin-left: -100px;
+  text-align: center;
+
+
+}
+
+.repair__button_text {
+  vertical-align: middle;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
 }
 
 /* Part 2 end */
@@ -755,7 +865,7 @@ body * {
 }
 
 .specialist__img {
-  position: absolute;
+  position: relative;
   left: 285px;
   margin-top: 0px;
   padding-top: 30px;
@@ -910,12 +1020,12 @@ body * {
   color: #ffffff;
 }
 
-.form__button {
+.form1 {
   font-family: Nunito Sans;
   margin-top: 24px;
   margin-left: 244px;
   margin-bottom: 27px;
-  font-size: 13px;
+  /* font-size: 13px; */
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
@@ -924,6 +1034,8 @@ body * {
   color: #ffffff;
   background: #e3b873;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+  /* cursor: pointer; */
+
 }
 
 .clients {
@@ -937,11 +1049,12 @@ body * {
   display: flex;
   align-items: flex-start;
   width: 441px;
-  height: 72px;
-  position: absolute;
-  left: 865px;
-  top: 4200px;
+  height: 90px;
+  position: relative;
+  left: 750px;
+
   margin-right: 33px;
+
 }
 
 .img__svg {
@@ -952,15 +1065,6 @@ body * {
   border-radius: 50px;
 }
 
-.img__svg2 {
-  background: #ffffff;
-  border: 0.1px solid #ffffff;
-  width: 40px;
-  height: 33px;
-  position: absolute;
-  top: 20px;
-  left: 16px;
-}
 
 .text__svg {
   font-family: Nunito Sans;
@@ -1251,7 +1355,7 @@ body * {
   text-align: start;
 }
 
-.form__input__guestions {
+.form3__input__guestions {
   font-family: Nunito Sans;
   display: flex;
   justify-content: center;
@@ -1267,11 +1371,11 @@ body * {
   color: #ffffff;
 }
 
-.form__input__guestions::placeholder {
+.form3__input__guestions::placeholder {
   color: white;
 }
 
-.form__input__guestions2 {
+.form3__input__guestions2 {
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: normal;
@@ -1285,18 +1389,18 @@ body * {
   color: #ffffff;
 }
 
-.form__input__guestions2::placeholder {
+.form3__input__guestions2::placeholder {
   color: white;
 }
 
-.form__checkbox {
+.form3__checkbox {
   border-radius: 1px;
   margin-top: 17px;
   margin-left: 48px;
   color: #ffffff;
 }
 
-.form__button {
+.form3 {
   font-family: Nunito Sans;
   margin-top: 24px;
   margin-left: 244px;
@@ -1307,9 +1411,15 @@ body * {
   text-transform: uppercase;
   width: 213px;
   height: 51px;
+  border: 0;
   color: #ffffff;
   background: #e3b873;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+}
+
+.form3:hover {
+  background: #73e395;
+  cursor: pointer;
 }
 
 .Scheme {
