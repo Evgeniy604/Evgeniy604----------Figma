@@ -16,7 +16,7 @@ html {
 body {
   margin: 0;
   font-family: Nunito Sans, Arial, Helvetica, sans-serif;
-  /* width: auto; */
+
 }
 
 body * {
@@ -24,7 +24,7 @@ body * {
 }
 
 .container {
-  /* width: auto; */
+
   margin: 0 auto;
 }
 
@@ -175,7 +175,7 @@ body * {
 .calculate {
   position: relative;
   z-index: 1;
-  /* margin-left: 91px; */
+
   margin-right: 20px;
   font-family: Nunito Sans;
   font-style: italic;
@@ -185,13 +185,12 @@ body * {
   text-align: center;
   color: #ffffff;
   background: none;
-  /* background: #e3b873; */
-  /* box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3); */
+
   border-radius: 2px;
   border: 1px solid #ffffff;
 
   box-sizing: border-box;
-  /* padding: 20px 42px; */
+
   width: 207px;
   height: 51px;
 }
@@ -261,7 +260,7 @@ body * {
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 7px;
-  /* color: #e3b873; */
+
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -269,23 +268,6 @@ body * {
   color: #e3b873;
   border-bottom: 1px solid #e3b873;
 }
-
-/* .Sochi__Thieves {
-  font-family: "yeseva-one";
-  font-size: 14px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.Rostov-on-Don__Patriotic {
-  font-family: "yeseva-one";
-  font-size: 14px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.3);
-} */
-
 
 
 .title__text__photo {
@@ -478,7 +460,7 @@ body * {
 
 .botton {
   display: flex;
-  align-items: center;
+
   justify-content: space-between;
   width: 205px;
   height: 14px;
@@ -487,8 +469,8 @@ body * {
 
 
 
-.btn1 {
-  background-image: url(../images/Group.png);
+.btn {
+  background-image: url(../svg/Group.\ vector.svg);
   background-repeat: no-repeat;
 
   height: 14px;
@@ -496,14 +478,38 @@ body * {
   color: #ffffff;
 }
 
-.btn2 {
-  background-image: url(../images/Rectangle2.png);
-  background-repeat: no-repeat;
-  height: 10px;
-  width: 10px;
-  color: #ffffff;
+.btn:hover {
+  cursor: pointer;
+
 }
 
+.btn2 {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 10px;
+  height: 10px;
+}
+
+
+/* .btn2::after { */
+/* background-image: url(../svg/Rectangle17.3.svg);
+  background-repeat: no-repeat; */
+/* height: 10px;
+  width: 10px;
+
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  content: '';
+  position: absolute;
+
+} */
+
+.btn2:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+/* 
 .btn3 {
   background-image: url(../images/Rectangle1.png);
   background-repeat: no-repeat;
@@ -518,12 +524,12 @@ body * {
   height: 10px;
   width: 10px;
   color: #ffffff;
-}
+} */
 
-.btn5 {
-  background-image: url(../images/Group1.png);
+.btn1 {
+  background-image: url(../svg/Group.vector1.svg);
   background-repeat: no-repeat;
-  /* transform: rotate(180deg); */
+
   height: 14px;
   width: 42px;
   color: #ffffff;
@@ -591,7 +597,7 @@ body * {
   height: 434px;
   position: relative;
 
-  /* margin-left: 311px; */
+
   margin-top: -186px;
 }
 
@@ -733,7 +739,7 @@ body * {
 
 .types__vector {
   background-image: url(../svg/Vector.jpg);
-  /* border-radius: 30px; */
+
   width: 28px;
   height: 28px;
   margin: 0 auto;
@@ -869,11 +875,13 @@ body * {
   left: 285px;
   margin-top: 0px;
   padding-top: 30px;
+  width: 420px;
 }
 
 .rect__png01 {
   display: flex;
   margin-bottom: 60px;
+  width: 485px;
 }
 
 .png01 {
@@ -1025,7 +1033,7 @@ body * {
   margin-top: 24px;
   margin-left: 244px;
   margin-bottom: 27px;
-  /* font-size: 13px; */
+
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
@@ -1034,7 +1042,7 @@ body * {
   color: #ffffff;
   background: #e3b873;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
-  /* cursor: pointer; */
+
 
 }
 
@@ -1274,6 +1282,7 @@ body * {
   margin: 0 auto;
   margin-top: -1150px;
   background: #000000;
+  position: 100px;
 }
 
 .group__guestions {
@@ -1417,10 +1426,7 @@ body * {
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
 }
 
-.form3:hover {
-  background: #73e395;
-  /* cursor: pointer; */
-}
+
 
 .Scheme {
   position: relative;
@@ -1447,7 +1453,7 @@ body * {
   font-family: Yeseva One;
   font-style: normal;
   font-weight: normal;
-  /* font-size: 20px; */
+
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
@@ -1471,12 +1477,10 @@ body * {
 
 }
 
-/* .footer {
-  margin-top: 1505px;
-} */
+
 
 .container__footer {
-  /* width: auto; */
+
   margin: 0 auto;
 }
 
@@ -1508,7 +1512,7 @@ body * {
   width: 1438px;
   height: 83px;
   margin: 0 auto;
-
+  margin-top: 688px;
   background-color: black;
 }
 
